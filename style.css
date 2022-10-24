@@ -1,0 +1,342 @@
+/* ! ! ! OBS ANVÄNDS EJ LÄNGRE ANDÄND SASSEN ! ! ! */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.88);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    visibility: hidden;
+    z-index: 1;
+    
+}
+
+input:checked + .menu nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;  
+    z-index: 2;
+    mix-blend-mode: difference;
+    
+}
+
+span {
+    background-color: white;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin-bottom: 3px;
+    border-radius: 2px;
+    
+}
+
+button span:nth-child(2) {
+    
+    background-color: rgb(0, 255, 255);
+    left: -6px;
+    position: relative;
+    transition: left 0.25s ease-in-out;
+       
+}
+
+button:hover span:nth-child(2) {
+    left: 0;
+}
+
+input {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+}
+
+input:checked + .menu button span {
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+input:checked + .menu button span:nth-child(1) {
+    background-color: rgb(0, 255, 255);
+    transform: rotate(45deg);
+}
+
+input:checked + .menu button span:nth-child(3) {
+    background-color: rgb(0, 255, 255);
+    transform: rotate(-45deg);
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+li:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+
+.bg-astro {
+    background-image: url("assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
+  
+    /* Full height */
+    height: 100vh; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header section {
+    border-color: black;
+    border: 5px;
+    border-style: solid;
+    width: 16rem;
+    height: 16rem;
+    margin-top: 50px;
+    margin-left: 40px;
+    position: absolute;
+    opacity: 1;
+    z-index: 0;
+}
+
+header section h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.5rem;
+    word-spacing: 60px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+header section a {
+    color: inherit;
+    text-decoration: none;
+    padding-left: 10px;
+
+}
+
+main {
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.column {
+    flex: 100%;
+    flex-direction: column;
+    width: 100vw;
+    padding: 25px
+}
+
+.container {
+    width: 90vw;  /* Or whatever */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 0px;
+    
+}
+
+/* ! ! ! OBS ANVÄNDS EJ LÄNGRE ANDÄND SASSEN ! ! ! */
+
+.bg-space {
+    background-image: url("assets/photos/spacelowsize.jpg");
+  
+    /* Full height */
+    height: 100vh; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin-top: 0px;
+
+    
+}
+
+.container h2:nth-child(2){
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4.5rem;
+    color: darkgray;
+    opacity: 0.8;
+    text-transform: capitalize;
+    margin-top: -50px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+q {
+    font-size: 1.25rem;
+    font-style: italic;
+    width: 70%;
+    text-align: left;
+    margin: auto;
+}
+
+p {
+    font-weight: lighter;
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+.desktop-only-q {
+    display: none;
+    min-height: 0px;
+}
+
+#majorTom {
+    height: 10%;
+    width: 10%;
+    transform: rotate(10deg);
+    opacity: 0.5;
+    display: none;
+    
+}
+
+/* ! ! ! OBS ANVÄNDS EJ LÄNGRE ANDÄND SASSEN ! ! ! */
+
+.container a {
+    color: #D200A2;
+}
+
+footer {
+    color: #D200A2;
+    background-color: midnightblue;
+    position: absolute;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    
+}
+
+.footerButton {
+    background-color: mediumblue;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: auto;
+    border: none;
+    visibility: visible;
+    position: relative;
+
+    /*skit från menu knappen*/
+    right: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    border: 0px;
+    cursor: pointer;  
+    z-index: 0;
+    mix-blend-mode: normal;
+    
+}
+
+.footerButton, footer p {
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+/* ! ! ! OBS ANVÄNDS EJ LÄNGRE ANDÄND SASSEN ! ! ! */
+
+@media screen and (min-width: 992px) {
+
+main {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.column {
+    flex: 50%;
+    flex-direction: column;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.container {
+    width: 75%;  /* Or whatever */
+    display: flex;
+    flex-direction: column;
+    min-height: 0px;
+    list-style: none;
+    justify-content: space-evenly;
+
+}
+
+#majorTom {
+    display: block;
+    height: 25%;
+    width: 25%;
+    transform: rotate(10deg);
+    opacity: 0.5;
+    float: right;
+
+}
+
+.desktop-only-q {
+    display: flex;
+    min-height: 0px;
+    font-size: 1.25rem;
+    font-style: italic;
+    width: 70%;
+    text-align: left;
+
+}
+
+}
+
+/* ! ! ! OBS ANVÄNDS EJ LÄNGRE ANDÄND SASSEN ! ! ! */

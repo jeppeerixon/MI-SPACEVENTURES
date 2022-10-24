@@ -1,0 +1,11 @@
+/* variablar */
+$client-color: #D200A2;
+
+/* import grunden för mobil här */
+@import 'base';
+
+/* import grunden för desktop här *** Borttagen pga bättre responsivitet ***
+@import 'tablet'; */
+
+/* import grunden för desktop här */
+@import 'desktop';
